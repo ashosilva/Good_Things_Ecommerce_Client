@@ -54,9 +54,9 @@ function App() {
     store.dispatch(loadUser())
 
     async function getStripeApiKey() {
-      const { data } = await axios.get('https://good-things-ecommerce-site.onrender.com/api/v1/stripeapi')
+      const { data } = await axios.get('/api/v1/stripeapi')
 
-      console.log(data.stripeApiKey)
+      console.log(data.stripeApiKey + "keyyyyyyyyyyy")
       setStripeApiKey(data.stripeApiKey)
     }
 
@@ -118,3 +118,4 @@ function App() {
 export default App;
 
 
+// "proxy": "http://127.0.0.1:4000/"

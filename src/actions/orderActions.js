@@ -26,7 +26,7 @@ export const createOrder = (order) => async (dispatch, getState) => {
             }
         }
 
-        const { data } = await axios.post('https://good-things-ecommerce-site.onrender.com/api/v1/order/new', order, config)
+        const { data } = await axios.post('/api/v1/order/new', order, config)
         console.log(data)
 
         dispatch({
@@ -50,7 +50,7 @@ export const myOrders = () => async (dispatch) => {
 
         dispatch({ type: MY_ORDERS_REQUEST });
 
-        const { data } = await axios.get('https://good-things-ecommerce-site.onrender.com/api/v1/orders/me')
+        const { data } = await axios.get('/api/v1/orders/me')
         console.log(data)
 
         dispatch({
@@ -72,7 +72,7 @@ export const getOrderDetails = (id) => async (dispatch) => {
 
         dispatch({ type: ORDER_DETAILS_REQUEST });
 
-        const { data } = await axios.get(`https://good-things-ecommerce-site.onrender.com/api/v1/order/${id}`)
+        const { data } = await axios.get(`/api/v1/order/${id}`)
 
         dispatch({
             type: ORDER_DETAILS_SUCCESS,
