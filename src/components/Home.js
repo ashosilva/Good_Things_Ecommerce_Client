@@ -70,7 +70,6 @@ const Home = ({ match }) => {
     }
 
     return (
-
         <Fragment>
             {loading ? <Loader /> :
                 <Fragment>
@@ -79,6 +78,7 @@ const Home = ({ match }) => {
 
                     <section id="products" className="container mt-5">
                         <div className="row">
+
                             {keyword ? (
                                 <Fragment>
                                     <div className="col-6 col-md-3 mt-5 mb-5">
