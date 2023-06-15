@@ -54,7 +54,7 @@ function App() {
     store.dispatch(loadUser())
 
     async function getStripeApiKey() {
-      const { data } = await axios.get('/api/v1/stripeapi')
+      const { data } = await axios.get('https://good-things-ecommerce-site.onrender.com/api/v1/stripeapi')
 
       console.log(data.stripeApiKey)
       setStripeApiKey(data.stripeApiKey)
