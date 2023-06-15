@@ -70,7 +70,7 @@ const Home = ({match}) => {
     }
 
     return (
-        <Fragment>
+        {/* <Fragment>
             {loading ? <Loader /> :
                 <Fragment>
                     <MetaData title={'Purchase Best Products Online'} />
@@ -201,7 +201,7 @@ const Home = ({match}) => {
                     
 
                 </Fragment>}
-        </Fragment>
+        </Fragment> */}
     )
 }
 
