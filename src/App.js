@@ -56,6 +56,7 @@ function App() {
     async function getStripeApiKey() {
       const { data } = await axios.get('/api/v1/stripeapi')
 
+      console.log(JSON.stringify(data) + " data")
       console.log(data.stripeApiKey + "keyyyyyyyyyyy")
       setStripeApiKey(data.stripeApiKey)
     }
