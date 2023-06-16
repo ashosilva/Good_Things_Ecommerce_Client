@@ -44,7 +44,7 @@ const UpdateProfile = ({ history }) => {
             })
         }
 
-    }, [dispatch, alert, error, history, isUpdated])
+    }, [dispatch, alert, error, history, isUpdated, user])
 
     const submitHandler = (e) => {
         e.preventDefault();
@@ -126,7 +126,7 @@ const UpdateProfile = ({ history }) => {
                                     />
                                     <label className='custom-file-label' htmlFor='customFile'>
                                         Choose Avatar
-                                </label>
+                                    </label>
                                 </div>
                             </div>
                         </div>

@@ -4,6 +4,7 @@
 
 # production 
 /frontend/build
+/skip.env
 
 # misc
 /backend/config/config.env

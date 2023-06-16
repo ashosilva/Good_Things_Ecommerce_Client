@@ -44,7 +44,7 @@ import axios from 'axios'
 // Payment
 import { loadStripe } from '@stripe/stripe-js'
 import { Elements } from '@stripe/react-stripe-js'
-import { userReducer } from './reducers/userReducers'
+//import { userReducer } from './reducers/userReducers'
 
 function App() {
 
@@ -54,7 +54,7 @@ function App() {
     store.dispatch(loadUser())
 
     async function getStripeApiKey() {
-      const { data } = await axios.get('http://127.0.0.1:4000/api/v1/stripeapi')
+      const { data } = await axios.get('/api/v1/stripeapi')
 
       console.log(data.stripeApiKey + "keyyyyyyyyyyy")
       setStripeApiKey(data.stripeApiKey)
@@ -118,4 +118,4 @@ function App() {
 export default App;
 
 
-// "proxy": "http://127.0.0.1:4000/"
+// "proxy": "http://127.0.0.1:4000/" --openssl-legacy-provider
