@@ -119,4 +119,4 @@ function App() {
 export default App;
 
 
-// "proxy": "http://127.0.0.1:4000/" --openssl-legacy-provider
+// "proxy": "http://127.0.0.1:4000/" --openssl-legacy-provider SKIP_PREFLIGHT_CHECK=true
